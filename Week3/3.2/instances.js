@@ -1,0 +1,17 @@
+const Message = require("./class")
+
+instance1 = new Message(3)
+instance2 = new Message(7)
+instance3 = new Message(21)
+instance4 = new Message(49)
+instance5 = new Message(9)
+instance6 = new Message(50)
+instance7 = new Message("A")
+
+console.log(instance1.Greet())
+console.log(instance2.Greet())
+console.log(instance3.Greet())
+console.log(instance4.Greet())
+console.log(instance5.Greet())
+console.log(instance6.Greet())
+console.log(instance7.Greet())
