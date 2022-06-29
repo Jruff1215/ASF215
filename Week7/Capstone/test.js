@@ -1,6 +1,8 @@
 const expect = require('chai').expect
 const ToDoList = require('./ToDoList')
 
+before(() => { console.log('-----Test Begins-----')})
+
 beforeEach(() => {
     instance = new ToDoList()
     instance.addItem(123)
@@ -9,6 +11,8 @@ beforeEach(() => {
     instance.addItem('def')
 
 })
+
+after(() => { console.log('-----The Entire Test Is Over-----')})
 
 //Call the list
 it('Call the list', () => {
