@@ -3,6 +3,8 @@ const assert = require('chai').assert
 const e = require('express')
 const JavaScriptClass = require('./jsClass')
 
+before(() => {console.log('------Test Starts------')})
+
 beforeEach(function () {
     instance = new JavaScriptClass()
     instance.addItem('abc')
@@ -13,8 +15,6 @@ beforeEach(function () {
 afterEach(function () {
     console.log('This test is Over')
 })
-
-before(() => {console.log('------Test Starts------')})
 
 after(() => {console.log('------Test is Complete------')})
 
