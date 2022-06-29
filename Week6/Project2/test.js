@@ -1,6 +1,5 @@
 const expect = require('chai').expect
 const assert = require('chai').assert
-const e = require('express')
 const JavaScriptClass = require('./jsClass')
 
 before(() => {console.log('------Test Starts------')})

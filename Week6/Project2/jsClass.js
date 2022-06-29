@@ -13,11 +13,10 @@ module.exports = class JavaScriptClass {
     }
     removeItem(){
     //Removes specific items from the array
-        const index = this.newArray.indexOf(3)
-        if (index > -1) {
-            this.newArray.splice(index, 2)
-        }
-        return this.newArray
+        // const index = this.newArray.indexOf(3)
+        // if (index > -1) {
+            this.newArray.splice(3, 1)
+            return this.newArray
     }
     searchItem(item){
       var letters = this.newArray.filter(function(letter) {
